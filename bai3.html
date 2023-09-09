@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+function calculateScore(a, b, c) {
+  let avgScore = (a + b + c) / 3
+  return avgScore
+  console.log('Diem trung binh ' + avgScore)
+}
+
+calScore(96, 108, 89)
+
+let dolphinAvg = Math.round(calScore( 96, 108, 89))
+let koalaAvg = Math.round(calScore( 109, 900, 106 ))
+
+function Win(dolphinAvg, koalaAvg) {
+  if(dolphinAvg > koalaAvg * 2) 
+  console.log(`Dolphin's chien thang voi diem la ${dolphinAverage} va koala's la ${koalaAverage}`)
+} if(koalaAverage > dolphinAverage * 2 ) {
+  console.log(`Koala's chien thang voi diem la ${koalaAverage} va dolphins va ${dolphinAverage}.`)
+}
+  else {
+    console.log("Khong co ai chien thang")
+  }
+    </script>
+</body>
+</html>

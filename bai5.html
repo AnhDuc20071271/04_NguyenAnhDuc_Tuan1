@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Tinh diem trung binh
+var calcAvg = (a, b, c) => (a + b + c) / 3;
+
+
+var checkWinner = (avgDolphins, avgKoalas) => {
+    if (avgDolphins >= 2 * avgKoalas) {
+        console.log(`Dolphins thang (${avgDolphins} vs. ${avgKoalas})`);
+    } else if (avgKoalas >= 2 * avgDolphins) {
+        console.log(`Koalas thang (${avgKoalas} vs. ${avgDolphins})`);
+    } else {
+        console.log("Khong ai thang!");
+    }
+};
+
+// Du lieu
+var dolphinsScore1 = [44, 23, 71];
+var koalasScore1 = [65, 54, 49];
+
+var dolphinsScore2 = [85, 54, 41];
+var koalasScore2 = [23, 34, 27];
+
+// Tinh toan
+var avgDolphins1 = calcAvg(...dolphinsScore1);
+var avgKoalas1 = calcAvg(...koalasScore1);
+
+var avgDolphins2 = calcAvg(...dolphinsScore2);
+var avgKoalas2 = calcAvg(...koalasScore2);
+
+console.log("Diem thu nhat:");
+checkWinner(avgDolphins1, avgKoalas1);
+
+console.log("\nDiem thu hai:");
+checkWinner(avgDolphins2, avgKoalas2);
+    </script>
+</body>
+</html>

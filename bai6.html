@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Tinh bill
+function calcTip(bill) {
+    return (bill >= 50 && bill <= 300) ? bill * 0.15 : bill * 0.2;
+}
+
+
+var testBill = 100;
+var tipAmount = calcTip(testBill);
+console.log(`Tien boa cho hoa don  ${testBill} la${tipAmount}`);
+
+// Du lieu
+var bill = [125, 555, 44];
+
+// Tinh tien tip
+var tip = bills.map(calcTip);
+
+// Tinh bill va tip
+var total = bills.map(bill => bill + calcTip(bill));
+
+console.log("Tip:", tip);
+console.log("Total:", total);
+    </script>
+</body>
+</html>
